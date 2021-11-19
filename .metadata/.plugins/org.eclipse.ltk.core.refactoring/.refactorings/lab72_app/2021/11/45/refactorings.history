@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lab72_app/text_mode_vga_color&apos; to &apos;text_mode_vga_color.c&apos;" description="Rename resource &apos;text_mode_vga_color&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="text_mode_vga_color" name="text_mode_vga_color.c" stamp="1636088152324" updateReferences="true"/>
+</session>
