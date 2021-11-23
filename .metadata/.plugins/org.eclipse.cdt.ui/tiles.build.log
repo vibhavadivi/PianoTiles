@@ -1,0 +1,6 @@
+19:08:27 **** Clean-only build of configuration Nios II for project tiles ****
+make clean 
+[tiles clean complete]
+
+19:08:27 Build Finished (took 288ms)
+
