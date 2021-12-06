@@ -1,6 +1,6 @@
-19:08:22 **** Clean-only build of configuration Nios II for project tiles_bsp ****
-make clean 
-[BSP clean complete]
+18:12:55 **** Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
 
-19:08:23 Build Finished (took 1s.465ms)
+18:12:55 Build Finished (took 873ms)
 

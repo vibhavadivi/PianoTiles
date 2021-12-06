@@ -5442,3 +5442,12 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY com.altera.sbtgui.launch 4 0 2021-11-18 17:01:14.430
 !MESSAGE Downloading ELF Process failed
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-23 18:14:25.829
+!MESSAGE Indexed 'pianotiles_bsp' (84 sources, 58 headers) in 1.36 sec: 1,128 declarations; 2,646 references; 113 unresolved inclusions; 4 syntax errors; 190 unresolved names (4.8%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-23 18:14:30.873
+!MESSAGE Indexed 'pianotiles' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.altera.sbtgui.core 4 0 2021-11-24 00:28:41.320
+!MESSAGE Error executing 'nios2-bsp-editor --settings settings.bsp', unexpected return code 1073807364.
