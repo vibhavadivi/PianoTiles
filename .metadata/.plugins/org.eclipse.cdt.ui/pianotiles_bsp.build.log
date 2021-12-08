@@ -1,6 +1,6 @@
-18:14:24 **** Clean-only build of configuration Nios II for project pianotiles_bsp ****
-make clean 
-[BSP clean complete]
+20:42:20 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
 
-18:14:26 Build Finished (took 1s.367ms)
+20:42:21 Build Finished (took 669ms)
 
