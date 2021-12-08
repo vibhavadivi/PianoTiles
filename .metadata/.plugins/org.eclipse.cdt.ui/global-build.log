@@ -9411,3 +9411,1145 @@ Info: Building ../finalproject_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
 [BSP build complete]
 [finalproject build complete]
+21:42:21 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+21:42:22 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+21:42:22 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+21:42:23 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+21:42:24 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+21:42:25 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+21:42:26 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+21:42:27 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+21:43:32 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+21:57:38 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+21:57:39 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+21:57:40 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+21:57:41 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+21:57:42 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+21:57:43 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+21:57:44 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+21:57:45 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+21:57:51 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+22:28:08 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+22:28:09 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+22:28:10 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+22:28:11 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+22:28:12 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+22:28:13 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+22:28:13 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+22:28:14 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+22:28:28 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+22:32:41 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+22:32:41 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+22:32:42 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+22:32:43 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+22:32:44 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+22:32:45 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+22:32:45 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+22:32:46 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+22:32:53 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+22:39:19 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+22:39:20 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+22:39:21 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+22:39:22 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+22:39:23 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+22:39:23 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+22:39:24 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+22:39:25 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+22:39:45 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+22:55:36 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+22:57:50 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+22:57:51 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+22:57:52 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+22:57:54 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+22:57:55 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+22:57:56 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+22:57:57 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+22:57:58 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+22:58:05 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+23:02:50 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+23:02:51 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+23:02:52 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+23:02:53 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+23:02:54 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+23:02:55 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+23:02:55 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+23:02:56 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+23:03:05 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+23:19:09 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+23:19:09 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+23:19:10 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+23:19:11 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+23:19:12 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+23:19:13 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+23:19:13 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+23:19:14 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+23:19:21 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+23:27:13 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+23:27:14 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+23:27:15 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+23:27:16 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+23:27:16 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+23:27:17 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+23:27:18 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+23:27:19 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+23:27:40 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+23:37:46 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+23:37:47 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+23:37:47 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+23:37:48 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+Command canceled
+23:38:10 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+23:38:11 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+23:38:11 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+23:38:12 **** Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+23:38:13 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+23:38:14 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+23:38:15 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+23:38:16 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+23:38:23 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+23:45:01 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+23:45:02 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+23:45:02 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+23:45:03 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+23:45:04 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+23:45:05 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+23:45:06 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+23:45:07 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+23:45:15 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+00:08:03 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+00:08:04 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+00:08:05 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+00:08:06 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+00:08:06 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+00:08:07 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+00:08:08 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+00:08:09 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+00:08:41 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+00:16:51 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+00:16:52 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+00:16:52 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+00:16:53 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+00:16:54 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+00:16:55 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+00:16:56 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+00:16:57 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+00:17:03 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+00:23:48 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+00:23:49 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+00:23:50 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+00:23:51 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+00:23:51 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+00:23:52 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+00:23:53 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+00:23:54 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+00:24:03 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+01:14:07 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+01:14:08 **** Incremental Build of configuration Nios II for project finalproject_bsp ****
+make all 
+[BSP build complete]
+01:14:09 **** Incremental Build of configuration Nios II for project pianotiles ****
+make all 
+Info: Building ../pianotiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
+[BSP build complete]
+Info: Linking pianotiles.elf
+nios2-elf-g++  -T'../pianotiles_bsp//linker.x' -msys-crt0='../pianotiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pianotiles_bsp/   -Wl,-Map=pianotiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pianotiles.elf  -lm -msys-lib=m
+../pianotiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [pianotiles.elf] Error 1
+01:14:10 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+make all 
+[BSP build complete]
+01:14:11 **** Incremental Build of configuration Nios II for project tiles ****
+make all 
+Info: Building ../tiles_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../tiles_bsp/
+[BSP build complete]
+Info: Linking tiles.elf
+nios2-elf-g++  -T'../tiles_bsp//linker.x' -msys-crt0='../tiles_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../tiles_bsp/   -Wl,-Map=tiles.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o tiles.elf  -lm -msys-lib=m
+../tiles_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+D:\GoogleSync\2021-2022\ECE385\final\software\tiles_bsp/HAL/src/alt_main.c:154: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [tiles.elf] Error 1
+01:14:12 **** Incremental Build of configuration Nios II for project tiles_bsp ****
+make all 
+[BSP build complete]
+01:14:13 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+Info: Linking usb_kb.elf
+nios2-elf-g++  -T'../usb_kb_bsp//linker.x' -msys-crt0='../usb_kb_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../usb_kb_bsp/   -Wl,-Map=usb_kb.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o usb_kb.elf obj/default/main.o -lm -msys-lib=m
+obj/default/main.o: In function `GetDriverandReport':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:34: undefined reference to `GetDevtable'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:42: undefined reference to `XferCtrlReq'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `hid_device'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:51: undefined reference to `XferCtrlReq'
+obj/default/main.o: In function `main':
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:143: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:145: undefined reference to `USB_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:148: undefined reference to `MAX3421E_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:149: undefined reference to `USB_Task'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:151: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:158: undefined reference to `kbdPoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:177: undefined reference to `mousePoll'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:207: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:218: undefined reference to `GetUsbTaskState'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:221: undefined reference to `MAX3421E_init'
+D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined reference to `USB_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [usb_kb.elf] Error 1
+01:14:14 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+01:14:21 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+03:33:32 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+03:36:22 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+03:45:05 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]

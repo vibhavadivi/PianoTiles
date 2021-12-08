@@ -1,4 +1,4 @@
-20:42:20 **** Incremental Build of configuration Nios II for project pianotiles ****
+01:14:09 **** Incremental Build of configuration Nios II for project pianotiles ****
 make all 
 Info: Building ../pianotiles_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pianotiles_bsp/
@@ -10,5 +10,5 @@ D:\GoogleSync\2021-2022\ECE385\Lab6\software\pianotiles_bsp/HAL/src/alt_main.c:1
 collect2.exe: error: ld returned 1 exit status
 make: *** [pianotiles.elf] Error 1
 
-20:42:20 Build Finished (took 930ms)
+01:14:10 Build Finished (took 1s.39ms)
 

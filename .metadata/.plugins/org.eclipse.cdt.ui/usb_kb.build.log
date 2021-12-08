@@ -1,4 +1,4 @@
-20:42:23 **** Incremental Build of configuration Nios II for project usb_kb ****
+01:14:13 **** Incremental Build of configuration Nios II for project usb_kb ****
 make all 
 Info: Building ../usb_kb_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
@@ -26,5 +26,5 @@ D:\GoogleSync\2021-2022\ECE385\Lab6\software\usb_kb/main.c:222: undefined refere
 collect2.exe: error: ld returned 1 exit status
 make: *** [usb_kb.elf] Error 1
 
-20:42:24 Build Finished (took 975ms)
+01:14:14 Build Finished (took 1s.133ms)
 
