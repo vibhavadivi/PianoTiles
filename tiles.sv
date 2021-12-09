@@ -348,7 +348,7 @@ always_ff @(posedge pixel_clk) begin
 		green <= 4'b0000;
 		blue <= 4'b0000;
 	end
-	else if (!scroll && isEnd == 1'b1)
+	else if (!scroll && !first && isEnd == 1'b1)
 	begin
 		red <= 4'b1111;
 		blue <= 4'b1111;
