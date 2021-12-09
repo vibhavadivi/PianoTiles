@@ -21,7 +21,7 @@ logic [4:0] nextSpeed;
 //
 //logic[10:0] fontRomNth, fontRomFinalRow;
 //logic[7:0] fontRomOutput;
-logic isStartText, isD, isF, isJ, isK, isSpace;
+logic isStartText, isD, isF, isJ, isK, isSpace, isEnd;
 logic [6:0]startTextVec[5];
 
 assign startTextVec[0] = 83;
@@ -105,6 +105,16 @@ text #(.NUM_CHAR(1)) k0(
 .scale(4),
 .isText(isK)
 ); 
+
+text #(.NUM_CHAR(10)) end0(
+.DrawX(DrawX),
+.DrawY(DrawY),
+.StartX(0),
+.StartY(128),
+.textVec('{71, 65, 77, 69, 0, 79, 86, 69, 82, 33}),
+.scale(8),
+.isText(isEnd)
+);  
 
 always_comb begin
 	col = DrawX >> 7;
@@ -338,8 +348,13 @@ always_ff @(posedge pixel_clk) begin
 		green <= 4'b0000;
 		blue <= 4'b0000;
 	end
-	
-	else if (!first && (isSpace == 1'b1 || isD == 1'b1 || isF == 1'b1 || isK == 1'b1 || isJ == 1'b1))
+	else if (!scroll && isEnd == 1'b1)
+	begin
+		red <= 4'b1111;
+		blue <= 4'b1111;
+		green <= 4'b0000;
+	end
+	else if (!scroll && (isSpace == 1'b1 || isD == 1'b1 || isF == 1'b1 || isK == 1'b1 || isJ == 1'b1))
 	begin
 		green <= 4'b1111;
 		red <= 4'b0000;

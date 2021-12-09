@@ -10553,3 +10553,15 @@ Info: Building ../finalproject_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
 [BSP build complete]
 [finalproject build complete]
+00:16:50 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
+00:39:18 **** Incremental Build of configuration Nios II for project finalproject ****
+make all 
+Info: Building ../finalproject_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../finalproject_bsp/
+[BSP build complete]
+[finalproject build complete]
