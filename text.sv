@@ -9,6 +9,8 @@ logic[7:0] fontRomOutput;
 
 logic [9:0] EndX, EndY;
 
+
+
 assign EndX = StartX + (scale * 8 * NUM_CHAR) - 1;
 assign EndY = StartY + (scale * 16) - 1;
 
@@ -19,6 +21,8 @@ font_rom f0 (
 	.addr(fontRomFinalRow),
 	.data(fontRomOutput)
 );
+
+
 
 always_comb
 	begin

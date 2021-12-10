@@ -166,7 +166,7 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 	//color_mapper colormapper (.BallX(ballxsig), .BallY(ballysig), .DrawX(drawxsig), .DrawY(drawysig), 
 									//.Ball_size(ballsizesig), .Red(Red), .Green(Green), .Blue(Blue));
 	tiles t(.Reset(Reset_h), .vs(VGA_VS), .pixel_clk(VGA_Clk), .blank(blank), .keycode(keycode), .DrawX(drawxsig), .DrawY(drawysig),
-				.red(VGA_R), .green(VGA_G), .blue(VGA_B));
+				.red(VGA_R), .green(VGA_G), .blue(VGA_B), .Clk(MAX10_CLK1_50));
 
 
 endmodule
