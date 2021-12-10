@@ -284,7 +284,7 @@ always_ff @(posedge Reset or posedge vs) begin
 				nextSpeed <= nextSpeed + 2;
 			end
 			speedCounter <= 1;
-			iterations = nextSpeed * 5;
+			iterations <= nextSpeed * 5; //this was originally = which is why our speeds were wack
 		end
 		
 		else begin
