@@ -2,7 +2,6 @@
 module lab7_soc (
 	clk_clk,
 	hex_digits_export,
-	key_external_connection_export,
 	key_wire_export,
 	keycode_export,
 	leds_export,
@@ -23,16 +22,10 @@ module lab7_soc (
 	spi0_SS_n,
 	usb_gpx_export,
 	usb_irq_export,
-	usb_rst_export,
-	vga_port_red,
-	vga_port_blue,
-	vga_port_green,
-	vga_port_hs,
-	vga_port_vs);	
+	usb_rst_export);	
 
 	input		clk_clk;
 	output	[15:0]	hex_digits_export;
-	input	[1:0]	key_external_connection_export;
 	input		key_wire_export;
 	output	[7:0]	keycode_export;
 	output	[13:0]	leds_export;
@@ -54,9 +47,4 @@ module lab7_soc (
 	input		usb_gpx_export;
 	input		usb_irq_export;
 	output		usb_rst_export;
-	output	[3:0]	vga_port_red;
-	output	[3:0]	vga_port_blue;
-	output	[3:0]	vga_port_green;
-	output		vga_port_hs;
-	output		vga_port_vs;
 endmodule

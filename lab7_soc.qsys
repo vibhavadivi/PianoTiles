@@ -372,11 +372,6 @@
    type="conduit"
    dir="end" />
  <interface
-   name="key_external_connection"
-   internal="key_0.external_connection"
-   type="conduit"
-   dir="end" />
- <interface
    name="key_wire"
    internal="key.external_connection"
    type="conduit"
@@ -410,11 +405,6 @@
  <interface
    name="usb_rst"
    internal="usb_rst.external_connection"
-   type="conduit"
-   dir="end" />
- <interface
-   name="vga_port"
-   internal="VGA_text_mode_controller_0.VGA_port"
    type="conduit"
    dir="end" />
  <module name="LED" kind="altera_avalon_pio" version="18.1" enabled="0">
@@ -1369,12 +1359,12 @@
   <parameter name="baseAddress" value="0x00c0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
+ <connection kind="clock" version="18.1" start="sdram_pll.c0" end="sdram.clk" />
  <connection
    kind="clock"
    version="18.1"
-   start="sdram_pll.c0"
+   start="clk_0.clk"
    end="VGA_text_mode_controller_0.CLK" />
- <connection kind="clock" version="18.1" start="sdram_pll.c0" end="sdram.clk" />
  <connection kind="clock" version="18.1" start="clk_0.clk" end="nios2_gen2_0.clk" />
  <connection kind="clock" version="18.1" start="clk_0.clk" end="LED.clk" />
  <connection kind="clock" version="18.1" start="clk_0.clk" end="sysid_qsys_0.clk" />

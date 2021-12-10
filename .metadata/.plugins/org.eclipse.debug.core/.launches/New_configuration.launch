@@ -6,7 +6,7 @@
 <stringAttribute key="byteStreamDeviceDeviceID" value="1"/>
 <stringAttribute key="byteStreamDeviceInstanceID" value="0"/>
 <booleanAttribute key="downloadProgram" value="true"/>
-<stringAttribute key="elfFile" value="D:\GoogleSync\2021-2022\ECE385\final\software\piano_tiles\piano_tiles.elf"/>
+<stringAttribute key="elfFile" value="D:\GoogleSync\2021-2022\ECE385\Lab6\software\finalproject\finalproject.elf"/>
 <stringAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value=""/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.altera.debug.cdi.gdb.plugin.Nios2GdbCdiDebugger"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
@@ -14,8 +14,8 @@
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
 <booleanAttribute key="org.eclipse.cdt.launch.ENABLE_REGISTER_BOOKKEEPING" value="false"/>
 <booleanAttribute key="org.eclipse.cdt.launch.ENABLE_VARIABLE_BOOKKEEPING" value="false"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="piano_tiles.elf"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="piano_tiles"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="finalproject.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="finalproject"/>
 <stringAttribute key="processorCableName" value="USB-Blaster on localhost [USB-0]"/>
 <stringAttribute key="processorDeviceIndex" value="1"/>
 <stringAttribute key="processorInstanceId" value="0"/>

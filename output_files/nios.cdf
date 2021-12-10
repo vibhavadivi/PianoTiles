@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("D:/GoogleSync/2021-2022/ECE385/Lab6/output_files/") File("nios.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("C:/Users/adityaj5/Documents/ECE385_Final_Project/output_files/") File("nios.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
