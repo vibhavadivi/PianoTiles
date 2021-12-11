@@ -559,11 +559,11 @@ always_ff @(posedge pixel_clk) begin
 		blue <= 4'b1111;
 		green <= 4'b0000;
 	end
-	else if(isBlack && isPresent && presentTiles[row]) begin
-		red <= PresentRed;
-		green <= PresentGreen;
-		blue <= PresentBlue;
-	end
+//	else if(isBlack && isPresent && presentTiles[row]) begin
+//		red <= PresentRed;
+//		green <= PresentGreen;
+//		blue <= PresentBlue;
+//	end
 	else if (scorePlusText2 && isPlusScoreText)
 	begin
 		red <= 4'b1000;

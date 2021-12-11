@@ -1,6 +1,6 @@
-01:14:10 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
+13:16:23 **** Incremental Build of configuration Nios II for project pianotiles_bsp ****
 make all 
 [BSP build complete]
 
-01:14:11 Build Finished (took 769ms)
+13:16:24 Build Finished (took 777ms)
 
